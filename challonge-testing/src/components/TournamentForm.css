@@ -1,0 +1,59 @@
+@import url('http://fonts.cdnfonts.com/css/valorant');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.createTournament-form {
+    margin-left: 300px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 45vh;
+    width: 70%;
+    position: relative;
+    background-image: url(./images/jett.png);
+    background-position: top;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+input, select {
+    height: 2.5vh;
+    width: 20%;
+    border: 1px solid #dc3d4b;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.createLabel {
+    font-size: xx-large;
+    font-family: 'VALORANT', sans-serif;
+    color: white;
+}
+
+.form-label {
+    font-family: 'Krona One', sans-serif;
+    color: #dc3d4b;
+}
+
+button {
+    font-family: "VALORANT", sans-serif;
+    background: #0f1923;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 160px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #dc3d4b;
+    margin-bottom: 2%;
+  }
+  
+  button:hover {
+    background-color: #dc3d4b;
+    color: black;
+  }
