@@ -4,15 +4,16 @@ import apiInstance from "./API/apiInstance";
 import './TournamentForm.css';
 
 
-const TournamentForm = () => {
+const TournamentForm = (props) => {
   const [tournamentName, setTournamentName] = useState("");
   const [tournamentType, setTournamentType] = useState("single elimination");
   const [tournamentUrl, setTournamentUrl] = useState("");
   const [startsAt, setStartsAt] = useState("");
 
 
-  const onSubmit = (e) => {
+  const submitData = (e) => {
     e.preventDefault();
+    // window.location.reload();
     apiInstance.post("/tournaments", {
       "data": {
         "type": "Tournaments",
@@ -30,12 +31,13 @@ const TournamentForm = () => {
     setTournamentUrl('');
     setTournamentType('Single Elimination');
     setStartsAt('');
+    // props.updated();
   };
 
   return (
     <div className="createTournament-form">
       <form>
-        <label className="createLabel">Create Tournament</label>
+        <label className="createLabel">START A TOURNAMENT!</label>
         <label className="form-label">Tournament Name</label>
         <input
           type="text"
@@ -46,7 +48,7 @@ const TournamentForm = () => {
           }}
           
         />
-        <label className="form-label">URL</label>
+        <label className="form-label">Custom URL</label>
         <input
           type="text"
           required
@@ -64,8 +66,8 @@ const TournamentForm = () => {
             setTournamentType(e.target.value);
           }}
         >
-          <option value="single elimination">Single Elimination</option>
-          <option value="double elimination">Double Elimination</option>
+        <option value="single elimination">Single Elimination</option>
+        <option value="double elimination">Double Elimination</option>
         </select>
         <label className="form-label">Start Date</label>
         <input
@@ -77,7 +79,7 @@ const TournamentForm = () => {
           }}
         />
         <br/>
-        <button onClick={onSubmit}>Submit</button>
+        <button onClick={submitData}>Submit</button>
       </form>
       
     </div>

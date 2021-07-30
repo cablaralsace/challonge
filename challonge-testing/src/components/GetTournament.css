@@ -1,13 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
-* {
-  box-sizing: border-box;
+@import url('http://fonts.cdnfonts.com/css/valorant');
+
+.loading h3{
+  font-size: 3rem;
+  font-family: "Valorant", sans-serif;
+  text-align: center;
+}
+.get-tournament {
+  height: 60vh;
+  overflow-y: scroll;
 }
 
-html {
+.get-tournament::-webkit-scrollbar {
+  width: 8px;
+}
+
+.get-tournament::-webkit-scrollbar-track {
+  background: pink;
+  border-radius: 10px;
+}
+
+.get-tournament::-webkit-scrollbar-thumb {
+  background: #dc3d4b;
+  border-radius: 10px;
+}
+
+.tournaments-list {
+  text-align: left;
+  /* list-style-position: inside; */
+}
+
+.tournaments {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-top: -1%;
+  margin-bottom: 5%;
+  color:#dc3d4b;
+}
+.tournamentDetails {
+  margin-top: -3%;
+}
+.tournamentDetails p {
+  margin-top: -2%;
+}
+.tournamentDetails p, span {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.get-tournament {
-  height: 80vh;
-  overflow-y:scroll;
+.detail-header {
+  list-style: none;
+  
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.details {
+  color:#364966;
+}
+
+.delete-popup {
+  background-color: black;
+  height: 30vh;
+  width: 50vw;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-popup button {
+  display: inline-block;
+  align-items: baseline;
+  margin-left: 25%;
+}
+
+.delete-popup h1 {
+  color: white;
+  text-align: center;
+}
+
+.delete-btn {
+  float: right;
+  margin-top: 0.1%;
+  font-size: 0.8rem;
+  width: 5vw;
 }

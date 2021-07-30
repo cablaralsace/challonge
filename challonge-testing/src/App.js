@@ -29,11 +29,11 @@ const App = () => {
       <div className="app-container">
         <div className="form-body">
           <TournamentForm/>
-          
         </div>
         <div className="response-body">
-          {/* <button className="btn-list" onClick={updated}> UPDATE LIST </button> */}
+          <h1>TOURNAMENTS LIST</h1>
           <GetTournament tournaments={tournaments} updated={updated} loadingState={loadingState}/>
+          <button className="update-btn" onClick={updated}> UPDATE LIST </button>
         </div>
       </div>
     </div>

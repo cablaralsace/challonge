@@ -34,6 +34,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
+  height: 90vh;
 }
 
 .form-body {
@@ -42,6 +43,20 @@ body {
 }
 
 .response-body{
+  margin-top: -5%;
   width: 60%;
   order: 2;
+  align-items: center;
+}
+
+.response-body h1 {
+  text-align:center;
+  color: #fa4454;
+  font-family: "Valorant", sans-serif;
+}
+
+.update-btn{
+  margin-top: 3%;
+  float:right;
+  margin-right: 3%;
 }
