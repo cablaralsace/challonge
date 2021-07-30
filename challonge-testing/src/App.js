@@ -26,14 +26,15 @@ const App = () => {
       <div className="header">
         <Header/>
       </div>
-      <div className="app-menu">
-        <h1> MENU </h1>
-        <TournamentForm/>
-        <button className="btn-list" onClick={updated}> LIST </button>
-      </div>
-      <div className="response-body">
-        <h1> RESPONSE BODY </h1>
-        <GetTournament tournaments={tournaments} updated={updated} loadingState={loadingState}/>
+      <div className="app-container">
+        <div className="form-body">
+          <TournamentForm/>
+          
+        </div>
+        <div className="response-body">
+          {/* <button className="btn-list" onClick={updated}> UPDATE LIST </button> */}
+          <GetTournament tournaments={tournaments} updated={updated} loadingState={loadingState}/>
+        </div>
       </div>
     </div>
   );

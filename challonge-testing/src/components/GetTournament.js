@@ -1,9 +1,10 @@
 import React from 'react'
+import "./GetTournament.css"
 
 const GetTournament = (props) => {
   // console.log(props.tournaments.data.data)
   return (
-    <div>
+    <div className="get-tournament">
       {props.loadingState && <div>Loading... Please Wait.</div>}
       {!props.loadingState &&
         <div>

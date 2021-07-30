@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import apiInstance from "./API/apiInstance";
-import './TournamentForm.css'
+import './TournamentForm.css';
 
 
 const TournamentForm = () => {
@@ -9,6 +9,7 @@ const TournamentForm = () => {
   const [tournamentType, setTournamentType] = useState("single elimination");
   const [tournamentUrl, setTournamentUrl] = useState("");
   const [startsAt, setStartsAt] = useState("");
+
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -23,16 +24,12 @@ const TournamentForm = () => {
         },
       },
     })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-      setTournamentName('');
-      setTournamentUrl('');
-      setTournamentType('Single Elimination');
-      setStartsAt('');
+    .then((response) => console.log(response))
+    .catch((error) => console.log(error))
+    setTournamentName('');
+    setTournamentUrl('');
+    setTournamentType('Single Elimination');
+    setStartsAt('');
   };
 
   return (
@@ -82,6 +79,7 @@ const TournamentForm = () => {
         <br/>
         <button onClick={onSubmit}>Submit</button>
       </form>
+      
     </div>
   );
 };

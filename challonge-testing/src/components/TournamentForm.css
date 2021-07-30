@@ -1,36 +1,31 @@
 @import url('http://fonts.cdnfonts.com/css/valorant');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
-.createTournament-form {
-    margin-left: 300px;
-}
-
 form {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 45vh;
-    width: 70%;
+    height: 90vh;
     position: relative;
     background-image: url(./images/jett.png);
     background-position: top;
-    border: 1px solid;
-    border-radius: 10px;
 }
 
 input, select {
-    height: 2.5vh;
-    width: 20%;
+    width: 50%;
     border: 1px solid #dc3d4b;
     border-radius: 4px;
     box-sizing: border-box;
+    margin-top: -8%;
+    margin-bottom: -8%;
 }
-
 .createLabel {
-    font-size: xx-large;
+    font-size: 2rem;
     font-family: 'VALORANT', sans-serif;
     color: white;
+    margin-top: -2%;
+    margin-bottom: -5%;
 }
 
 .form-label {
@@ -39,21 +34,19 @@ input, select {
 }
 
 button {
+    margin-top: -10%;
     font-family: "VALORANT", sans-serif;
     background: #0f1923;
     color: white;
-    border: none;
     height: 40px;
-    width: 160px;
-    margin-left: 10px;
+    width: 20vw;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     border: 2px solid #dc3d4b;
-    margin-bottom: 2%;
   }
   
-  button:hover {
+button:hover {
     background-color: #dc3d4b;
     color: black;
-  }
+}
